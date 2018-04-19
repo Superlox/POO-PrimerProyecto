@@ -14,16 +14,9 @@ import java.util.ArrayList;
 public class Eleccion {
     private ArrayList<Papeleta>Papeletas=new ArrayList();
     private ArrayList<PartidoPolitico>Partidos=new ArrayList();
-    private Resultados Resulto;
 
     public Eleccion() {
-        this.Resulto=null;
-    }
-
-    public Eleccion(Resultados Resulto) {
-        this.Resulto = Resulto;
-    }
-    
+    }    
 
     public ArrayList<PartidoPolitico> getPartidos() {
         return Partidos;
@@ -39,14 +32,6 @@ public class Eleccion {
 
     public void setPapeletas(Papeleta Papeletas) {
         this.Papeletas.add(Papeletas);
-    }
-
-    public Resultados getResulto() {
-        return Resulto;
-    }
-
-    public void setResulto(Resultados Resulto) {
-        this.Resulto = Resulto;
     }
     
 }
